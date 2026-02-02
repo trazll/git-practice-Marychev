@@ -1,0 +1,41 @@
+1. Настройка пользователя:
+   git config --global user.name "Your Name"  # Установка имени для коммитов
+   git config --global user.email "your@email.com"  # Установка email для коммитов
+   Пример: git config --global user.name "trazll"
+
+2. Создание и навигация по папкам:
+   mkdir folder_name  # Создать папку
+   cd folder_name  # Перейти в папку
+   pwd  # Показать текущий путь
+   ls  # Список файлов/папок
+   Пример: mkdir Lab2_ISRPO_FIO; cd Lab2_ISRPO_FIO
+
+3. Инициализация репозитория:
+   git init -b main  # Инициализировать репозиторий с основной веткой main
+
+4. Проверка статуса:
+   git status  # Показать состояние файлов (untracked, modified, staged)
+
+5. Добавление файлов в индекс:
+   git add .  # Добавить все файлы (кроме игнорируемых)
+   git add file_name  # Добавить конкретный файл
+
+6. Создание коммита:
+   git commit -m "Message"  # Создать коммит с сообщением
+
+7. Просмотр истории:
+   git log  # Полная история коммитов
+   git log --oneline  # Краткая история (хеш + сообщение)
+   git show commit_hash  # Детали конкретного коммита
+
+8. Работа с удаленным репозиторием:
+   git remote add origin url  # Добавить удаленный репозиторий
+   git remote -v  # Проверить подключенные remotes
+   git push -u origin branch  # Отправить ветку на сервер
+
+9. Работа с ветками:
+   git switch -c branch_name  # Создать и переключиться на ветку
+   git switch branch_name  # Переключиться на ветку
+   git branch  # Список локальных веток
+   git branch -a  # Список всех веток (локальные + удаленные)
+   git branch -d branch_name  # Удалить ветку (если слита)
